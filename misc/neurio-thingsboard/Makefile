@@ -29,7 +29,7 @@ endef
 
 define Package/neurio-thingsboard/install
 	$(INSTALL_DIR) $(1)/usr/bin
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/bin/neurio $(1)/usr/bin
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/bin/neurio-thingsboard $(1)/usr/bin
 endef
 	
 $(eval $(call BuildPackage,neurio-thingsboard))
