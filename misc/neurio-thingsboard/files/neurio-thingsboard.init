@@ -1,0 +1,16 @@
+#!/bin/sh /etc/rc.common
+
+USE_PROCD=1
+ 
+start_service() {        
+	procd_open_instance neurio-thingsboard
+	procd_set_param command /usr/bin/neurio-thingsboard -c /etc/neurio-thingsboard.cfg
+	procd_set_param respawn ${respawn_threshold:-3600} ${respawn_timeout:-5} ${respawn_retry:-5}
+	procd_set_param file /etc/neurio-thingsboard.cfg
+	procd_set_param stdout 1 # forward stdout of the command to logd
+	procd_set_param stderr 1 # same for stderr
+	procd_set_param user nobody
+	procd_set_param pidfile /var/run/neurio-thingsboard.cfg
+	procd_close_instance
+}                 
+ 
