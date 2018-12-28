@@ -9,7 +9,7 @@ PKG_LICENSE:=MIT
 PKG_SOURCE_URL:=https://github.com/stuwilkins/neurio-thingsboard.git
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_DATE:=2018-12-25
-PKG_SOURCE_VERSION:=03ce799d80a17e598ef9f46554ce5054fac7d2b1
+PKG_SOURCE_VERSION:=4af5171fb03846b08894fe72cad710d5e244e66e
 
 PKG_MAINTAINER:=Stuart B. Wilkins <stuwilkins@mac.com>
 
@@ -21,6 +21,7 @@ define Package/neurio-thingsboard
 	TITLE:=Neurio Bridge for Thingsboard
 	URL:=https://github.com/stuwilkins/neurio-thingsboard
 	DEPENDS:=+libpaho.mqtt.c +curl +libjson-c +libconfig
+	USERID:=neurio=900:neurio=900
 endef
 
 define Package/neurio-thingsboard/description
