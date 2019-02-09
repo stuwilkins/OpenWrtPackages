@@ -9,7 +9,7 @@ PKG_LICENSE:=MIT
 PKG_SOURCE_URL:=https://github.com/stuwilkins/neurio-thingsboard.git
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_DATE:=2018-12-25
-PKG_SOURCE_VERSION:=4af5171fb03846b08894fe72cad710d5e244e66e
+PKG_SOURCE_VERSION:=9f305140c080b5153e02fb87802c6ee0ec95e72d
 
 PKG_MAINTAINER:=Stuart B. Wilkins <stuwilkins@mac.com>
 
